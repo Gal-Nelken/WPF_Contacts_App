@@ -1,0 +1,16 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+
+
+
+
+    <!-- BASE COLORS -->
+    <SolidColorBrush x:Key="clr1" Color="#f1f7f0" />
+    <SolidColorBrush x:Key="clr2" Color="#242225" />
+    <SolidColorBrush x:Key="clr3" Color="#00a186" />
+
+
+
+
+</ResourceDictionary>
