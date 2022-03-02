@@ -32,6 +32,18 @@ namespace Contacts_App.Windows
 
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
+            if (String.IsNullOrWhiteSpace(FirstNameBox.Text))
+            {
+                ErrorTextBlock.Visibility = Visibility.Visible;
+                ErrorTextBlock.Text = "Please enter first name";
+                return;
+            }
+            if (String.IsNullOrWhiteSpace(LastNameBox.Text))
+            {
+                ErrorTextBlock.Visibility = Visibility.Visible;
+                ErrorTextBlock.Text = "Please enter last name";
+                return;
+            }
             Contact contact = new Contact()
             {
                 FirstName = FirstNameBox.Text,
@@ -48,6 +60,13 @@ namespace Contacts_App.Windows
             connection.Insert(contact);
             }
 
+            ErrorTextBlock.Visibility = Visibility.Collapsed;
+            Close();
+        }
+
+        private void CloseWindowBtn_Click(object sender, RoutedEventArgs e)
+        {
+            ErrorTextBlock.Visibility = Visibility.Collapsed;
             Close();
         }
     }

@@ -8,7 +8,7 @@
         Title="Contact Details" Height="400" Width="400"  >
 
 
-    <Border BorderBrush="DarkGoldenrod" BorderThickness="5" CornerRadius="10">
+    <Border BorderBrush="DarkGray" BorderThickness="5" CornerRadius="10">
     <Grid Margin="5" RenderTransformOrigin="0.5,0.5">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
@@ -24,6 +24,15 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
+        <Button x:Name="CloseWindowBtn"
+                Grid.Column="1" Grid.Row="0"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Top"
+                Width="30"
+                Height="30"
+                Content="X"
+                Foreground="Black"
+                Click="CloseWindowBtn_Click"/>
             
         <TextBlock Text="Contact Details" 
                    Grid.ColumnSpan="2" Grid.Row="0"

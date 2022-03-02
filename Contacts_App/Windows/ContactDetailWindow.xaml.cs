@@ -64,5 +64,10 @@ namespace Contacts_App.Windows
 
             Close();
         }
+
+        private void CloseWindowBtn_Click(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
     }
 }
